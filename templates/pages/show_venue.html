@@ -11,7 +11,7 @@
 		</p>
 		<div class="genres">
 			{% for genre in venue.genres %}
-			<span class="genre">{{ genre }}</span>
+			<span class="genre">{{ genre}}</span>
 			{% endfor %}
 		</div>
 		<p>
@@ -76,6 +76,8 @@
 </section>
 
 <a href="/venues/{{ venue.id }}/edit"><button class="btn btn-primary btn-lg">Edit</button></a>
+<a href="{{url_for('delete_venue', venue_id = venue.id) }}"><button class="btn btn-danger btn-lg">Delete</button></a>
+
 
 {% endblock %}
 

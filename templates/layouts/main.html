@@ -56,7 +56,7 @@
               {% if (request.endpoint == 'venues') or
                 (request.endpoint == 'search_venues') or
                 (request.endpoint == 'show_venue') %}
-              <form class="search" method="post" action="/venues/search">
+              <form class="search" method="POST" action="/venues/search">
                 <input class="form-control"
                   type="search"
                   name="search_term"
