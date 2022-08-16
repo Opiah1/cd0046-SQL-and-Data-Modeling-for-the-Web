@@ -57,7 +57,10 @@ class VenueForm(Form):
 
     seeking_description = StringField(
         'seeking_description'
-    )
+    ) 
+
+
+
 class ArtistForm(Form):
     name = StringField(
         'name', validators=[DataRequired()]

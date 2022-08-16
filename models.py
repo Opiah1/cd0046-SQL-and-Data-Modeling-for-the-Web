@@ -2,11 +2,13 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_moment import Moment
-import datetime
 
-app = Flask(__name__)
-db = SQLAlchemy(app)
 
+#----------------------------------------------------------------------------#
+# Models.
+#----------------------------------------------------------------------------#
+
+db = SQLAlchemy()
 class Venue(db.Model):
     __tablename__ = 'Venue'
 

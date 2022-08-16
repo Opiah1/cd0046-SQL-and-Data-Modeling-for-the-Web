@@ -24,10 +24,7 @@ class Genre(enum.Enum):
 
     @classmethod
     def choices(cls):
-        """Methods decorated with class methos can be called staticlly
-        without an instance of the class"""
         return [(choice.name, choice.value) for choice in cls]
-
 
 class State(enum.Enum):
     AL = "AL"
